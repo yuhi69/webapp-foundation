@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webアプリケーションベース</title>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+  <div style="position: relative;">
+    <div class="border border-1 rounded w-50 p-3" style="margin: 8px auto">
+      <form action="/login" method="post">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" name="username" id="username" class="form-control" placeholder="username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" id="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">ログイン</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

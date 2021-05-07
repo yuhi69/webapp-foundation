@@ -1,0 +1,20 @@
+{
+  "name": "webapp-foundation-login",
+  "version": "1.0.0",
+  "description": "Web application foundation including login function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "your name",
+  "license": "MIT",
+  "dependencies": {
+    "@moebius/http-graceful-shutdown": "^1.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "hjs": "0.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
