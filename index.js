@@ -13,7 +13,10 @@ const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
 const bodyParser = require('body-parser');
 
+const { routes } = require('./routes');
+
 const app = express();
+module.exports.express = app;
 
 const User1 = {
   username: "user",
@@ -139,6 +142,4 @@ app.get('/', (request, response) => {
 /**
  * ログイン後ページ.
  */
-app.get('/enter-page', isAuthenticated, (request, response) => {
-  response.sendFile(path.join(__dirname, 'views/2.html'));
-});
+app.get('/enter-page', isAuthenticated, routes.get.enterPage);
